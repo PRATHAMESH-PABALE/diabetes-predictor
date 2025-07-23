@@ -12,7 +12,7 @@ st.write("Enter your health details below to check your diabetes risk.")
 model = joblib.load("diabetes_model.pkl")
 
 # Input fields
-pregnancies = st.number_input("Pregnancies", min_value=0, max_value=20, value=1)
+pregnancies = st.number_input("Pregnancies", min_value=0, max_value=20, value=0)
 glucose = st.number_input("Glucose Level", min_value=0, max_value=200, value=85)
 blood_pressure = st.number_input("Blood Pressure (mm Hg)", min_value=0, max_value=150, value=70)
 skin_thickness = st.number_input("Skin Thickness (mm)", min_value=0, max_value=100, value=20)
